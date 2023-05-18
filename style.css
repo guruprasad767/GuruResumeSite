@@ -82,6 +82,10 @@ main{
     padding: 5px 4%;
 }
 
+.profpic img{
+    width: 250px;
+}
+
 .techsidespace{
     width: 60%;
     padding: 5px 8%;
@@ -92,64 +96,15 @@ main{
     justify-content: space-between;
 }
 
-.cpp{
+.line{
     background-color: #b799e0;
     height: 1.3rem;
     width: 35%;
 }
 
-.cppscore{
+.score{
     background-color: #773dc8;
     height: 1.3rem;
-    width: 90%;
-}
-
-.html{
-    background-color: #b799e0;
-    height: 1.3rem;
-    width: 35%;
-}
-
-.htmlscore{
-    background-color: #773dc8;
-    height: 1.3rem;
-    width: 85%;
-}
-
-.css{
-    background-color: #b799e0;
-    height: 1.3rem;
-    width: 35%;
-}
-
-.cssscore{
-    background-color: #773dc8;
-    height: 1.3rem;
-    width: 50%;
-}
-
-.python{
-    background-color: #b799e0;
-    height: 1.3rem;
-    width: 35%;
-}
-
-.pythonscore{
-    background-color: #773dc8;
-    height: 1.3rem;
-    width: 60%;
-}
-
-.dsa{
-    background-color: #b799e0;
-    height: 1.3rem;
-    width: 35%;
-}
-
-.dsascore{
-    background-color: #773dc8;
-    height: 1.3rem;
-    width: 80%;
 }
 
 .langsidespace{
@@ -166,6 +121,7 @@ main{
 
 .content2{
     display: flex;
+    flex-direction: row;
 }
 
 .info{
@@ -216,6 +172,19 @@ main{
     background-color: #8443df;
 }
 
+.smalltxt{
+    font-size: 17px;
+}
+
+.mail{
+    display: flex;
+}
+
+.maillogo{
+    color: #8443df;
+    margin-right: 10px;
+}
+
 
 /* Grey shade #d9c9f1  e2d6f3  ece5f5 */
 
@@ -223,6 +192,9 @@ main{
 @media screen and (max-width: 1300px) {
     .gg{
         font-size: 10px;
+    }
+    .techsidespace{
+        width: 80%;
     }
 }
 
@@ -235,11 +207,28 @@ main{
         padding: 5px 0px;
         margin: 8% 25%;
     }
+
+    .content2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .techsidespace{
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 700px) {
     body{
         font-size: 15px;
+    }
+
+    .profpic img{
+        width: 150px;
+    }
+
+    h1{
+        font-size: 35px;
     }
 
     .gg{
@@ -248,5 +237,8 @@ main{
 
     .name{
         font-size: 20px;
+    }
+    .techsidespace{
+        width: 90%;
     }
 }
